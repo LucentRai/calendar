@@ -1,0 +1,119 @@
+@font-face{
+	font-family: 'AvantGarde';
+	src: url("../asset/fonts/AvantGarde_Bk_BT.woff") format('woff'),
+		url("../asset/fonts/AvantGarde_Bk_BT.woff2") format('woff2'),
+		url("../asset/fonts/AvantGarde_Bk_BT.ttf") format('truetype'),
+		url("../asset/fonts/AvantGarde_Bk_BT.svg") format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face{
+	font-family: 'AvantGardeMedium';
+	src: url("../asset/fonts/AvantGarde_Md_BT.woff") format('woff'),
+		url("../asset/fonts/AvantGarde_Md_BT.woff2") format('woff2'),
+		url("../asset/fonts/AvantGarde_Md_BT.ttf") format('truetype'),
+		url("../asset/fonts/AvantGarde_Md_BT.svg") format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face{
+	font-family: 'AvantGardeItalic';
+	src: url("../asset/fonts/AvantGarde_Bk_BT_italics.woff") format('woff'),
+		url("../asset/fonts/AvantGarde_Bk_BT_italics.woff2") format('woff2')
+		url("../asset/fonts/AvantGarde_Bk_BT_italics.ttf") format('truetype'),
+		url("../asset/fonts/AvantGarde_Bk_BT_italics.svg") format('svg');
+	font-weight: normal;
+	font-style: italic;
+}
+@font-face{
+	font-family: 'AvantGardeBoldItalic';
+	src: url("../asset/fonts/AvantGarde_Md_BT_bold_italic.woff") format('woff'),
+		url("../asset/fonts/AvantGarde_Md_BT_bold_italic.woff2") format('woff2'),
+		url("../asset/fonts/AvantGarde_Md_BT_bold_italic.ttf") format('truetype'),
+		url("../asset/fonts/AvantGarde_Md_BT_bold_italic.svg") format('svg');
+	font-weight: bold;
+	font-style: italic;
+}
+@font-face{
+	font-family: 'Geometric';
+	src: url("../asset/fonts/Geometric_231_BT.woff") format('woff'),
+		url("../asset/fonts/Geometric_231_BT.woff2") format('woff2'),
+		url("../asset/fonts/Geometric_231_BT.ttf") format('truetype'),
+		url("../asset/fonts/Geometric_231_BT.svg") format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face{
+	font-family: 'GeometricBold';
+	src: url("../asset/fonts/Geometric_231_BT_bold.woff") format('woff'),
+		url("../asset/fonts/Geometric_231_BT_bold.woff2") format('woff2'),
+		url("../asset/fonts/Geometric_231_BT_bold.ttf") format('truetype'),
+		url("../asset/fonts/Geometric_231_BT_bold.svg") format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face{
+	font-family: 'GeometricHeavy';
+	src: url("../asset/fonts/Geometric_231_Heavy_BT.woff") format('woff'),
+		url("../asset/fonts/Geometric_231_Heavy_BT.woff2") format('woff2'),
+		url("../asset/fonts/Geometric_231_Heavy_BT.ttf") format('truetype'),
+		url("../asset/fonts/Geometric_231_Heavy_BT.svg") format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face{
+	font-family: 'GeometricLight';
+	src: url("../asset/fonts/Geometric_231_Light_BT.woff") format('woff'),
+		url("../asset/fonts/Geometric_231_Light_BT.woff2") format('woff2'),
+		url("../asset/fonts/Geometric_231_Light_BT.ttf") format('truetype'),
+		url("../asset/fonts/Geometric_231_Light_BT.svg") format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face{
+	font-family: 'RockwellLight';
+	src: url("../asset/fonts/Rockwell_light.woff") format('woff'),
+		url("../asset/fonts/Rockwell_light.woff2") format('woff2'),
+		url("../asset/fonts/Rockwell_light.ttf") format('truetype'),
+		url("../asset/fonts/Rockwell_light.svg") format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face{
+	font-family: 'RockwellLightItalic';
+	src: url("../asset/fonts/Rockwell_light_italic.woff") format('woff'),
+		url("../asset/fonts/Rockwell_light_italic.woff2") format('woff2'),
+		url("../asset/fonts/Rockwell_light_italic.ttf") format('truetype'),
+		url("../asset/fonts/Rockwell_light_italic.svg") format('svg');
+	font-weight: normal;
+	font-style: italic;
+}
+*{
+	color: #000000;
+}
+body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+}
+h1{
+	font-family: AvantGarde, Arial, sans-serif;
+	font-size: 2rem;
+	color: #065089;
+}
+h2{
+	font-family: AvantGarde, Arial, sans-serif;
+	font-size: 2.2rem;
+	color: #3c4043;
+}
+header{
+	padding: 0.5rem 1rem;
+	display: flex;
+	align-items: center;
+}
+input{
+	font: AvantGarde, Arial, sans-serif;
+}

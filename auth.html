@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Authentication - Calendar App</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<link rel="apple-touch-icon" sizes="180x180" href="asset/icons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="asset/icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="asset/icons/favicon-16x16.png">
+	<link rel="shortcut icon" href="asset/icons/favicon.ico">
+	
+	<style>
+		@font-face{
+			font-family: 'AvantGarde';
+			src: url("./asset/fonts/AvantGarde_Bk_BT.woff") format('woff'),
+				url("./asset/fonts/AvantGarde_Bk_BT.woff2") format('woff2'),
+				url("./asset/fonts/AvantGarde_Bk_BT.ttf") format('truetype'),
+				url("./asset/fonts/AvantGarde_Bk_BT.svg") format('svg');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face{
+			font-family: 'AvantGardeMedium';
+			src: url("./asset/fonts/AvantGarde_Md_BT.woff") format('woff'),
+				url("./asset/fonts/AvantGarde_Md_BT.woff2") format('woff2'),
+				url("./asset/fonts/AvantGarde_Md_BT.ttf") format('truetype'),
+				url("./asset/fonts/AvantGarde_Md_BT.svg") format('svg');
+			font-weight: bold;
+			font-style: normal;
+		}
+		body{
+			margin: 0;
+			padding: 0;
+			display: flex;
+			justify-content: center;
+			align-items:center;
+			width:100%;
+			height: 100vh;
+			color: #FFFFFF;
+		}
+		div#container{
+			width: 60%;
+			margin-top: -10%;
+			padding: 3rem;
+			background: #3399CC;
+			border: 1px solid #3399CC;
+			border-radius: 10px;
+		}
+		h1{
+			text-align: center;
+			font-family: AvantGardeMedium, Arial, sans-serif;
+			font-size: 3rem;
+			margin: 0 0 3rem;
+			padding: 0;
+		}
+		form{
+			width: 60%;
+			margin: 0 auto;
+			display: grid;
+			grid-gap: 6px;
+			grid-template-columns: 10rem / 1fr;
+		}
+		label{
+			font-family: AvantGarde, Arial, sans-serif;
+			font-size: 1.6rem;
+			grid-column: 1 / 2;
+		}
+		input, button{
+			padding: 0.6rem;
+			background-color: rgba(255,255,255,0.30);
+			grid-column: 2 / 3;
+			border: 2px solid #FFFFFF;
+			border-radius: 6px;
+		}
+		button{
+			border: 2px solid #3399CC;
+			border-radius: 12px;
+			width: 10rem;
+			color: #003366;
+			background: #FFFFFF;
+			padding: 0.2rem;
+			font-size: 1.5rem;
+		}
+	</style>
+</head>
+<body>
+<!--	<div id="con">-->
+	<div id="container">
+		<h1>Authentication</h1>
+		<form action="#" method="post">
+			<label for="user">Username</label><input id="username" type="text">
+			<small>Error Message</small>
+			<label for="password">Password</label><input id="password" type="password">
+			<small>Error Message</small>
+			<button>Log in</button>
+		</form>
+	</div>
+<!--	</div>-->
+</body>
+</html>
