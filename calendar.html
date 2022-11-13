@@ -9,217 +9,7 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="asset/icons/favicon-16x16.png">
 	<link rel="shortcut icon" href="asset/icons/favicon.ico">
 	<link rel="stylesheet" type="text/css" href="css/theme.css">
-	
-	<style>
-		.app-logo{
-			width: 40px;
-			max-width: 100%;
-		}
-		header{
-			border: 0;
-			border-bottom: 2px solid #E0E0E0;
-		}
-		h1{
-			display: inline-block;
-			padding: 0.2rem 1rem;
-			margin: 0;
-		}
-		h2{
-			margin: 0 1rem;
-			font-size: 1.2rem;
-			font-weight: normal;
-		}
-		button#today{
-			margin: 0 1rem;
-			padding: 0.2rem 0.5rem;
-			font: AvantGarde, Arial, sans-serif;
-			font-size: 1.4rem;
-			color: #FFFFFF;
-			background: #394459;
-			border: none;
-			border-radius: 6px;
-		}
-		header span.toggle{
-			color: #5B6D8F;
-			font-size: 1.5rem;
-			font-weight: bold;
-		}
-		form#search{
-			width: 45%;
-			margin: 0 1rem;
-			display: flex;
-			align-items: center;
-		}
-		input#search-bar{
-			font-family: AvantGarde, Arial, sans-serif;
-			font-size: 1.2rem;
-			font-weight: lighter;
-			color: #4C4C4C;
-			border: 0;
-			border-bottom: 1px solid #446EB6;
-			padding: 0.4rem;
-			width: 95%;
-		}
-		input#search-bar:focus{
-			border: 1px solid #446EB6;
-		}
-		input#search-img{
-			padding: 0;
-			margin: 6px;
-			width: 40px;
-			height: 40px;
-		}
-		#content{
-			margin: 0;
-			padding: 0;
-			display: flex;
-		}
-		aside#left-pane{
-			margin: 0;
-			padding: 1rem;
-			max-width: 260px;
-			grid-area: l;
-			border: 0;
-			border-right: 2px solid #E0E0E0;
-		}
-		nav#forward-back{
-			background: #C9C9C9;
-			padding: 0;
-			border: 0;
-			border-radius: 6px;
-		}
-		button.toggle{
-			margin: 0;
-			padding: 0px;
-			width: calc(1.2rem + 4px);
-			height: calc(1.2rem + 4px);
-			text-align: center;
-			text-decoration: none;
-			display: inline-block;
-			font: 1.2rem Arial, sans-serif;
-			color: #666666;
-			background: none;
-			border: 0;
-		}
-		button.toggle:hover{
-			color: #313131;
-			border: 0;
-			border-radius: 2px;
-		}
-		ul#calendar-options{
-			list-style: none;
-			margin: 0;
-			padding: 0;
-		}
-		ul#calendar-options li{
-			font-family: RockwellLight, Arial, sans-serif;
-			font-size: 0.9rem;
-		}
-		.day{
-			width: 100%;
-			height: auto;
-			display: block;
-			font-family: AvantGarde, Arial, sans-serif;
-			text-align: center;
-			color: #181818;
-		}
-		.date-block{
-			display: block;
-			width: 100%;
-			height: 100%;
-		}
-		.date{
-			display: block;
-			width: 100%;
-			height: 100%;
-			text-align: center;
-			margin: 0 auto;
-			font-family: AvantGarde, Arial, sans-serif;
-			color: #4C4C4C;
-		}
-		.next-month-date{
-			color: #707070;
-		}
-		.date-highlight{
-			font-family: AvantGardeMedium, Arial, sans-serif;
-			font-weight: bolder;
-			color: #FFFFFF;
-			padding: 2px;
-			border: 0;
-			border-radius: 50%;
-			background-color: #0E60FB;
-		}
-		#calendar-overview{
-			margin: 1rem 0;
-		}		
-		#calendar-overview h2{
-			display: inline-block;
-			margin: 0 6px;
-			padding: 0;
-			font-size: 1rem;
-			font-weight: lighter;
-		}
-		#calendar-overview ol{
-			margin: 0;
-			padding: 0;
-			display: grid;
-			grid-template: repeat(6, auto) / repeat(7, 1fr);
-			position: relative;
-			list-style: none;
-		}
-		#calendar-overview ol li{
-			margin: 6px;
-		}
-		#calendar-overview ol li.day{
-			font-size: 0.8rem;
-		}
-		#calendar-overview ol li.date-block{
-			font-size: 0.8rem;
-		}
-		ul#calendar-options{
-			margin: 1rem 1rem;
-			padding: 0;
-		}
-		section{
-			width: 100%;
-			margin: 0;
-			padding: 0;
-			display: flex;
-		}
-		ol#calendar{
-			margin: 0;
-			padding: 0;
-			flex-grow: 1;
-			display: grid;
-			grid-template: 2rem repeat(5, 1fr) / repeat(7, 1fr);
-			grid-auto-flow: dense;
-			list-style: none;
-		}
-		ol#calendar li{
-			display: block;
-		}
-		ol#calendar li.day{
-			border-right: 2px solid #E0E0E0;			
-		}
-		ol#calendar li.date-block{
-			border-top: 2px solid #E0E0E0;
-			border-right: 2px solid #E0E0E0;
-		}
-		aside#right-pane{
-			margin: 0;
-			padding: 0;
-			width: 48px;
-		}
-		aside#right-pane ul{
-			margin: 0;
-			padding: 1rem 0;
-			list-style: none;
-		}
-		.app-icons{
-			width: 30px;
-			margin: 4px;
-		}
-	</style>
+	<link rel="stylesheet" type="text/css" href="css/calendar.css">
 </head>
 <body>
 	<header>
@@ -232,12 +22,12 @@
 		<h1>Calendar</h1>
 		<button id="today" title="Tue. October 20, 2020">Today</button>
 		<nav id="forward-back">
-			<button type="button" onClick="#" class="toggle">&#60;</button>
-			<button type="button" onClick="#" class="toggle">&#62;</button>
+			<button type="button" class="back-btn">&#60;</button>
+			<button type="button" class="forward-btn">&#62;</button>
 		</nav>
 		<h2>October 2020</h2>
 		<form id="search">
-			<input id="search-bar" type="search">
+			<input id="search-bar" type="search" placeholder="Search Event">
 			<input id="search-img" type="image" src="asset/icons/search.svg" alt="search"> 
 		</form>
 	</header>
@@ -245,8 +35,8 @@
 		<aside id="left-pane">
 			<div id="calendar-overview">
 				<h2>October 2020</h2>
-				<button type="button" onClick="#" class="toggle">&#60;</button>
-				<button type="button" onClick="#" class="toggle">&#62;</button>
+				<button type="button" class="toggle">&#60;</button>
+				<button type="button" class="toggle">&#62;</button>
 				<ol>
 					<li class="day">S</li>
 					<li class="day">M</li>
@@ -495,5 +285,11 @@
 			</ul>
 		</aside>
 	</div>
+<script>
+	const selectorBtn = document.querySelectorAll("#forward-back button");
+	selectorBtn[0].addEventListener('click', (e) => {
+		
+	});
+</script>
 </body>
 </html>
